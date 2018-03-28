@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <head>
-      <title>Backend Challenges | Free Code Camp</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="/public/style.css" rel="stylesheet" type="text/css">
-   </head>
+  <title>URL Shortener Microservice</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="/public/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid"><img src="https://avatars0.githubusercontent.com/adamhamm?&amp;s=128" alt="My Face"/><p><a href="mailto:adam.hamm@gmail.com"> <i class="fa fa-envelope fa-fw"></i></a><a href="https://github.com/adamhamm" target="_blank"> <i class="fa fa-github fa-fw"></i></a><a href="https://www.linkedin.com/in/adamhamm" target="_blank"> <i class="fa fa-linkedin"></i></a><a href="http://codepen.io/adamhamm" target="_blank"> <i class="fa fa-codepen"></i></a><a href="http://www.freecodecamp.com/adamhamm" target="_blank"><i class="fa fa-fire fa-fw"></i></a></p>
+    <p>Created by Adam Hamm (adamhamm).</p>
+    <h1 class="header">FreeCodeCamp API Basejump: URL Shortener Microservice</h1>
+  <div class="inner cover">
+          <span class="glyphicon glyphicon-link"></span>
+          <h1>URL Shortener</h1>
+          <h4>coligo.io</h4>
 
-   <body>
-      <div class="container">
-         <h1>Manage Node.js projects and npm packages using package.json</h1>
-         <h3>Part 1 of Free Code Camp Backend Challenges</h3>
-      </div>
-   </body>
+          <div class="row">
 
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="input-group input-group-lg">
+                <input id="url-field" type="text" class="form-control" placeholder="Paste a link...">
+                <span class="input-group-btn">
+                  <button class="btn btn-shorten" type="button">SHORTEN</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-lg-offset-2">
+              <div id="link"></div>
+            </div>
+
+          </div>
+
+    </div>
+      <p>User stories:</p>
+      <p>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p>
+      <p>When I visit that shortened URL, it will redirect me to my original link.</p>
+    <h3>Example creation usage:</h3>
+    <code>https://url-shortening-api.glitch.me/api/shorten/https://www.google.com</code>
+    <br/>
+    <code>https://url-shortening-api.glitch.me/api/shorten/http://foo.com:80</code>
+    <h3>Example creation output</h3>
+    <code>{"original_url":"http://foo.com:80", "short_url":"https://url-shortening-api.glitch.me/8"}</code>
+    <h3>Usage:</h3>
+    <code>https://url-shortening-api.glitch.me/7</code>
+    <h3>Will redirect to:</h3>
+    <code>https://www.google.com/</code>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="/public/shorten.js"></script>
+</body>
 </html>
