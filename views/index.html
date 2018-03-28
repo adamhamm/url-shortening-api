@@ -11,35 +11,29 @@
   <link href="/public/styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container-fluid"><img src="https://avatars0.githubusercontent.com/adamhamm?&amp;s=128" alt="My Face"/><p><a href="mailto:adam.hamm@gmail.com"> <i class="fa fa-envelope fa-fw"></i></a><a href="https://github.com/adamhamm" target="_blank"> <i class="fa fa-github fa-fw"></i></a><a href="https://www.linkedin.com/in/adamhamm" target="_blank"> <i class="fa fa-linkedin"></i></a><a href="http://codepen.io/adamhamm" target="_blank"> <i class="fa fa-codepen"></i></a><a href="http://www.freecodecamp.com/adamhamm" target="_blank"><i class="fa fa-fire fa-fw"></i></a></p>
+  <div class="container-fluid">
+    <img src="https://avatars0.githubusercontent.com/adamhamm?&amp;s=128" alt="My Face"/>
     <p>Created by Adam Hamm (adamhamm).</p>
     <h1 class="header">FreeCodeCamp API Basejump: URL Shortener Microservice</h1>
-  <div class="inner cover">
-          <span class="glyphicon glyphicon-link"></span>
-          <h1>URL Shortener</h1>
-          <h4>coligo.io</h4>
+    <span class="glyphicon glyphicon-link"></span>
+    <h1>URL Shortener</h1>
+    <div class="row">
 
-          <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="input-group input-group-lg">
+          <input id="url-field" type="text" class="form-control" placeholder="Paste a link..."><span class="input-group-btn"><button class="btn btn-shorten" type="button">SHORTEN</button></span>
+        </div>
+      </div>
 
-            <div class="col-lg-8 col-lg-offset-2">
-              <div class="input-group input-group-lg">
-                <input id="url-field" type="text" class="form-control" placeholder="Paste a link...">
-                <span class="input-group-btn">
-                  <button class="btn btn-shorten" type="button">SHORTEN</button>
-                </span>
-              </div>
-            </div>
-
-            <div class="col-lg-8 col-lg-offset-2">
-              <div id="link"></div>
-            </div>
-
-          </div>
+      <div class="col-lg-8 col-lg-offset-2">
+        <div id="link"></div>
+      </div>
 
     </div>
-      <p>User stories:</p>
-      <p>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p>
-      <p>When I visit that shortened URL, it will redirect me to my original link.</p>
+
+    <p>User stories:</p>
+    <p>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p>
+    <p>When I visit that shortened URL, it will redirect me to my original link.</p>
     <h3>Example creation usage:</h3>
     <code>https://url-shortening-api.glitch.me/api/shorten/https://www.google.com</code>
     <br/>
